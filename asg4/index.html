@@ -1,14 +1,102 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Website Template</title>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Least Favorite — Balakrishna</title>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial; margin:24px; line-height:1.5; color:#111; }
+    header, main, footer { max-width:900px; margin:0 auto; }
+    header { display:flex; gap:16px; align-items:center; }
+    header img { width:140px; height:auto; border-radius:8px; }
+    .note { font-size:0.9rem; color:#555; }
+    table { border-collapse:collapse; width:100%; margin-top:12px; }
+    th, td { border:1px solid #ccc; padding:8px; text-align:left; }
+    th { background:#f2f2f2; }
+    a { color:#0b6efd; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    .container { padding:12px; border-radius:8px; background:#fafafa; }
+  </style>
 </head>
 <body>
+  <header>
+    <!-- Put the downloaded image file at ./img/balakrishna.jpg -->
+    <img src="./img/balakrishna.jpg" alt="Balakrishna portrait">
+    <div>
+      <h1>Balakrishna</h1>
+      <h2><span class="note">Personal opinion page — "least favorite" (student assignment)</span></h2>
+      <p class="note">This is a template. Replace placeholders (works, years, ratings) with verified data if you are using a real public figure.</p>
+    </div>
+  </header>
 
-	<h1>Website Template</h1>
-	<p>Fork and use this template repo (a.k.a. "boilerplate") for any web project</p>
-	
+  <main>
+    <div class="container">
+      <h2>Why I picked Balakrishna as my least favorite</h2>
+      <p>
+        This is my personal opinion for a class project — everyone has different tastes. Below is a short list of artists I prefer and a table of three works I consider the weakest (placeholders).
+      </p>
+    </div>
+
+    <!-- unordered list of 3 better artists -->
+    <section>
+      <h2>Three artists I think are better</h2>
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Artist_A" target="_blank" rel="noopener">Artist A</a> — stronger acting range.</li>
+        <li><a href="https://en.wikipedia.org/wiki/Artist_B" target="_blank" rel="noopener">Artist B</a> — more consistent film choices.</li>
+        <li><a href="https://en.wikipedia.org/wiki/Artist_C" target="_blank" rel="noopener">Artist C</a> — better critical reception.</li>
+      </ul>
+    </section>
+
+    <!-- 3x3 table listing top 3 'worst' pieces (placeholders) -->
+    <section>
+      <h2>Top 3 worst pieces (replace with real info)</h2>
+      <p class="note">Columns: Title — Year — Rating (source). Fill these with verified citations if using real works.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Year</th>
+            <th>Rating (source)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span>Worst Film / Work #1 (placeholder)</span></td>
+            <td>YYYY</td>
+            <td>N/A — replace with Rotten Tomatoes / Metacritic / AV Club rating</td>
+          </tr>
+          <tr>
+            <td><span>Worst Film / Work #2 (placeholder)</span></td>
+            <td>YYYY</td>
+            <td>N/A — replace with Rotten Tomatoes / Metacritic / AV Club rating</td>
+          </tr>
+          <tr>
+            <td><span>Worst Film / Work #3 (placeholder)</span></td>
+            <td>YYYY</td>
+            <td>N/A — replace with Rotten Tomatoes / Metacritic / AV Club rating</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="note">Note: Rotten Tomatoes / Metacritic / AV Club may not list ratings for regional films — you can use local review sites or reputable sources instead and cite them.</p>
+    </section>
+
+    <section>
+      <h2>More info</h2>
+      <div>
+        <p>If you want to look up verified film info and ratings, try:</p>
+        <ul>
+          <li><a href="https://www.imdb.com/" target="_blank" rel="noopener">IMDb</a> — filmographies and credits</li>
+          <li><a href="https://www.rottentomatoes.com/" target="_blank" rel="noopener">Rotten Tomatoes</a> — ratings for many mainstream films</li>
+          <li><a href="https://www.metacritic.com/" target="_blank" rel="noopener">Metacritic</a> — aggregated reviews</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="note">
+      <p>Project: HTML practice — includes &lt;h1&gt;, &lt;h2&gt;, &lt;a&gt;, &lt;span&gt;, &lt;div&gt;, &lt;ul&gt;, &lt;li&gt;, and a 3×3 &lt;table&gt;.</p>
+    </div>
+  </footer>
 </body>
 </html>
