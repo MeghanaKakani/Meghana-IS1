@@ -1,9 +1,67 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title> Meghana </title>
+  <meta charset="UTF-8">
+  <title>Dinner Invitation for THE8</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lavishly+Yours&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <h1>Dinner Invitation with THE8</h1>
+
+  <!-- Guest 1: THE8 -->
+  <div class="guest">
+    <img src="https://i.scdn.co/image/ab6761610000e5eb6c3adad6ff63d4f04f5b2fc4" alt="THE8">
+    <p><strong>THE8 (Xu Minghao)</strong> is the Chinese member of SEVENTEEN, known for his incredible dance skills, artistry, and calm presence. 
+    I’d love to invite him because of his unique perspective on life, art, and music — and of course, to see his kind personality shine over dinner.</p>
+  </div>
+
+  <!-- Guest 2: Hoshi -->
+  <div class="guest">
+    <img src="https://i.scdn.co/image/ab6761610000e5eb8945a72c4aa59c3f6a4d1f72" alt="Hoshi">
+    <p><strong>Hoshi (Kwon Soonyoung)</strong> is SEVENTEEN’s performance leader, full of energy and creativity. 
+    He would bring laughter, excitement, and endless charisma to the table.</p>
+  </div>
+
+  <!-- Guest 3: S.Coups -->
+  <div class="guest">
+    <img src="https://i.scdn.co/image/ab6761610000e5eb5e05459b2e6af3720e04db4a" alt="S.Coups">
+    <p><strong>S.Coups (Choi Seungcheol)</strong> is SEVENTEEN’s leader, always caring for the members. 
+    His leadership, humor, and warmth would make him the perfect dinner guest.</p>
+  </div>
+
+  <!-- Menu -->
+  <div class="menu">
+    <h2>Menu</h2>
+    <ul>
+      <li>Appetizers: “Adore U” Dumplings, Diamond Rolls</li>
+      <li>Main Course: Hotpot of Friendship, Carat Curry</li>
+      <li>Dessert: Shining Diamond Cake, Purple Macarons</li>
+    </ul>
+  </div>
+
+  <!-- RSVP Form -->
+  <form>
+    <h2>RSVP</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+
+    <label>Will you be bringing a guest?</label>
+    <input type="radio" id="yes" name="guest" value="yes">
+    <label for="yes">Yes</label>
+    <input type="radio" id="no" name="guest" value="no">
+    <label for="no">No</label>
+
+    <label for="diet">Dietary Preferences:</label>
+    <textarea id="diet" name="diet"></textarea>
+
+    <input type="submit" value="Submit RSVP">
+  </form>
 </body>
 </html>
