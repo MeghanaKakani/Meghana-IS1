@@ -1,5 +1,14 @@
 /* styles.css */
-
+.ribeye-regular {
+  font-family: "Ribeye", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.combo-regular {
+  font-family: "Combo", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 * {
 	font-family: Arial;
 }
