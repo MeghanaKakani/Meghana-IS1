@@ -1,11 +1,13 @@
+<style>
+  body {
+    font-family: 'Combo', sans-serif;
+  }
 
-h1.ribeye-regular {
-  font-family: "Ribeye", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-h2.combo-regular {
-  font-family: "Combo", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
+  h1 {
+    font-family: 'Ribeye', cursive;
+  }
+
+  h2 {
+    font-family: 'Combo', sans-serif;
+  }
+</style>
