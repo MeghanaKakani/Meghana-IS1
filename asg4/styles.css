@@ -18,3 +18,112 @@
     .container { padding:12px; border-radius:8px; background:#fafafa; }
   </style>
 </head>
+/* === Fonts and Base Styles === */
+body {
+  font-family: 'Source Code Pro', monospace;
+  background-color: #f4f6f8;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+}
+
+/* === Header === */
+header {
+  display: flex;
+  align-items: center;
+  background-color: #e0e7ff;
+  padding: 20px;
+  border-bottom: 3px solid #4a56e2;
+}
+
+header img.portrait {
+  border-radius: 10px;
+  margin-right: 20px;
+  width: 200px;
+  height: auto;
+}
+
+header h1 {
+  font-family: 'SUSE Mono', monospace;
+  font-size: 2.5rem;
+  color: #1e3799;
+  margin: 0;
+}
+
+header .note {
+  color: #e74c3c;
+  font-size: 1.2rem;
+}
+
+/* === Container Section === */
+.container {
+  padding: 30px;
+}
+
+/* === Section Titles === */
+section h2 {
+  font-family: 'SUSE Mono', monospace;
+  color: #273c75;
+  border-bottom: 2px solid #718093;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* === Lists === */
+ul {
+  list-style: square inside;
+  padding-left: 20px;
+}
+
+ul li a {
+  color: #0066cc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+ul li a:hover {
+  color: #e84118;
+}
+
+/* === Table === */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 15px;
+  font-size: 1rem;
+}
+
+th, td {
+  border: 1.5px solid #333;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #dcdde1;
+  font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f1f2f6;
+}
+
+/* === Note Text === */
+.note {
+  font-style: italic;
+  color: #555;
+}
+
+/* === Responsive Design === */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  header img.portrait {
+    margin-bottom: 15px;
+  }
+}
