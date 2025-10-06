@@ -1,89 +1,3 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>My Least Favorite — Balakrishna</title>
-  <style>
-    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial; margin:24px; line-height:1.5; color:#111; }
-    header, main, footer { max-width:900px; margin:0 auto; }
-    header { display:flex; gap:16px; align-items:center; }
-    header img { width:140px; height:auto; border-radius:8px; }
-    .note { font-size:0.9rem; color:#555; }
-    table { border-collapse:collapse; width:100%; margin-top:12px; }
-    th, td { border:1px solid #ccc; padding:8px; text-align:left; }
-    th { background:#f2f2f2; }
-    a { color:#0b6efd; text-decoration:none; }
-    a:hover { text-decoration:underline; }
-    .container { padding:12px; border-radius:8px; background:#fafafa; }
-  </style>
-<style>
-    body {
-      background-color: #f3e8ff; /* light lavender */
-      color: #2e0249; /* dark purple text */
-      font-family: 'Source Code Pro', monospace;
-      margin: 40px;
-      line-height: 1.7;
-    }
-
-    h1, h2 {
-      font-family: 'SUSE Mono', monospace;
-    }
-
-    h1 {
-      color: #7b2cbf; /* strong purple */
-      font-size: 2.2rem;
-    }
-
-    h2 {
-      color: #9d4edd; /* medium purple */
-      margin-top: 30px;
-    }
-
-    p {
-      color: #5a189a; /* deeper purple for body text */
-      max-width: 700px;
-    }
-
-    img {
-      width: 200px;
-      border-radius: 10px;
-      display: block;
-      margin-bottom: 10px;
-    }
-
-    table {
-      border-collapse: collapse;
-      width: 100%;
-      margin-top: 20px;
-    }
-
-    th, td {
-      border: 2px solid #7b2cbf; /* purple border */
-      padding: 10px;
-      text-align: left;
-    }
-
-    th {
-      background-color: #c77dff; /* light purple header */
-      color: white;
-    }
-
-    td {
-      background-color: #e0aaff; /* soft lavender cells */
-    }
-
-    a {
-      color: #7b2cbf;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-      color: #5a189a;
-    }
-  </style>
-</head>
 /* === Fonts and Base Styles === */
 body {
   font-family: 'Source Code Pro', monospace;
@@ -103,7 +17,7 @@ header {
   border-bottom: 3px solid #4a56e2;
 }
 
-header img.portrait {
+header img {
   border-radius: 10px;
   margin-right: 20px;
   width: 200px;
@@ -120,11 +34,6 @@ header h1 {
 header .note {
   color: #e74c3c;
   font-size: 1.2rem;
-}
-
-/* === Container Section === */
-.container {
-  padding: 30px;
 }
 
 /* === Section Titles === */
@@ -175,12 +84,6 @@ tbody tr:nth-child(even) {
   background-color: #f1f2f6;
 }
 
-/* === Note Text === */
-.note {
-  font-style: italic;
-  color: #555;
-}
-
 /* === Responsive Design === */
 @media (max-width: 600px) {
   header {
@@ -189,21 +92,7 @@ tbody tr:nth-child(even) {
     text-align: center;
   }
 
-  header img.portrait {
+  header img {
     margin-bottom: 15px;
   }
 }
-<style>
-  table {
-    border-collapse: collapse; /* makes borders clean */
-    width: 100%;               /* full width */
-  }
-  th, td {
-    border: 2px solid black;   /* border around each cell */
-    padding: 8px;              /* space inside cells */
-    text-align: left;
-  }
-  th {
-    background-color: #f2f2f2; /* light gray background for header */
-  }
-</style>
