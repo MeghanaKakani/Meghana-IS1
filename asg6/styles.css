@@ -22,61 +22,75 @@
             (_.--__) (_.--__)
        
 
- Insert all your glorious CSS styles below! */
-/* styles.css for Six Thinking Hats Project */
 
-
+/* Background pattern */
 html {
   background: url('images/background-pattern.png') repeat;
   font-family: 'SUSE Mono', monospace; /* Body font */
-  color: #e0e0e0;
+  color: #e8defc; /* light lavender text */
 }
 
-/* Global body style */
+/* Main container */
 body {
   margin: 40px auto;
   max-width: 900px;
-  background-color: rgba(20, 20, 40, 0.8);
-  padding: 30px;
+  background-color: rgba(45, 20, 65, 0.85); /* dark purple overlay */
+  padding: 40px;
   border-radius: 20px;
-  line-height: 1.6em; /* Adjust line spacing */
+  box-shadow: 0 0 20px #7d3cff; /* soft glow */
+  line-height: 1.7em; /* line spacing for readability */
 }
 
-/* Heading font and sizes */
+/* Headings */
 h1, h2, h3 {
   font-family: 'Michroma', sans-serif;
-  color: #00ffb3; /* Main accent color */
+  text-transform: uppercase;
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2.6em;
   text-align: center;
-  color: #00ffc6;
+  color: #b47bff; /* bright violet */
+  text-shadow: 0 0 8px #6d00ff;
 }
 
 h2 {
   font-size: 1.8em;
-  margin-top: 40px;
-  color: #89f9ff;
+  color: #d2b3ff; /* lighter purple */
+  margin-top: 45px;
+  border-bottom: 2px solid #aa7aff;
+  padding-bottom: 6px;
 }
 
 h3 {
   font-size: 1.5em;
-  color: #fff48c;
+  color: #a0ffe6; /* teal highlight for contrast */
+  margin-top: 50px;
 }
 
-/* Paragraph styling */
+/* Paragraphs */
 p {
   font-size: 1.1em;
-  color: #f4f4f4;
-  margin-bottom: 1em;
+  color: #f1e6ff;
+  margin-bottom: 1.2em;
 }
 
-/* Image styling */
+/* Floated hat image */
 .hat-img {
   float: right;
-  width: 150px;
-  margin: 10px 0 10px 20px;
+  width: 160px;
+  margin: 10px 0 10px 25px;
   border-radius: 10px;
+  border: 2px solid #a769ff;
+  box-shadow: 0 0 12px #c89aff;
+}
+
+/* Links or highlights (optional) */
+a {
+  color: #a0ffe6;
+  text-decoration: none;
+}
+a:hover {
+  color: #fff6ff;
 }
 
