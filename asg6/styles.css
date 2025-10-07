@@ -23,3 +23,60 @@
        
 
  Insert all your glorious CSS styles below! */
+/* styles.css for Six Thinking Hats Project */
+
+
+html {
+  background: url('images/background-pattern.png') repeat;
+  font-family: 'SUSE Mono', monospace; /* Body font */
+  color: #e0e0e0;
+}
+
+/* Global body style */
+body {
+  margin: 40px auto;
+  max-width: 900px;
+  background-color: rgba(20, 20, 40, 0.8);
+  padding: 30px;
+  border-radius: 20px;
+  line-height: 1.6em; /* Adjust line spacing */
+}
+
+/* Heading font and sizes */
+h1, h2, h3 {
+  font-family: 'Michroma', sans-serif;
+  color: #00ffb3; /* Main accent color */
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  color: #00ffc6;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-top: 40px;
+  color: #89f9ff;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: #fff48c;
+}
+
+/* Paragraph styling */
+p {
+  font-size: 1.1em;
+  color: #f4f4f4;
+  margin-bottom: 1em;
+}
+
+/* Image styling */
+.hat-img {
+  float: right;
+  width: 150px;
+  margin: 10px 0 10px 20px;
+  border-radius: 10px;
+}
+
