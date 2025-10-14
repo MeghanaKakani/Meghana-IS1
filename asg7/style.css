@@ -1,1 +1,150 @@
+/* ======================================================
+   Style Sheet for RM for President Campaign Page
+   ====================================================== */
+
+/* Google Fonts Helper Local Fonts */
+@font-face {
+  font-family: 'PlayfairDisplayLocal';
+  src: url('fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MontserratLocal';
+  src: url('fonts/Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Root colors */
+:root {
+  --primary: #6A0DAD; /* BTS purple */
+  --accent: #FFD700;  /* gold */
+  --dark: #111111;
+  --muted: #f6f8fb;
+  --max-width: 1000px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'MontserratLocal', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: linear-gradient(180deg, #ffffff 0%, var(--muted) 100%);
+  color: var(--dark);
+  line-height: 1.6;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: var(--max-width);
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(10, 20, 40, 0.08);
+  overflow: hidden;
+}
+
+/* Header */
+header {
+  padding: 2rem;
+  border-bottom: 2px solid var(--primary);
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.header-left h1 {
+  font-family: 'PlayfairDisplayLocal', Georgia, 'Times New Roman', serif;
+  margin: 0;
+  font-size: 1.8rem;
+  color: var(--primary);
+}
+
+.header-left p {
+  margin: 0;
+  color: #555;
+}
+
+.header-right {
+  text-align: right;
+}
+
+/* Button */
+a.button {
+  display: inline-block;
+  padding: 0.45rem 0.9rem;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Main layout */
+main {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 1.5rem;
+  padding: 1.5rem 2rem 2rem 2rem;
+  align-items: start;
+}
+
+/* Cards */
+section.card {
+  background: linear-gradient(180deg, #fff 0%, #f8f0ff 100%);
+  padding: 1.25rem;
+  border-radius: 8px;
+  border: 1px solid #f0e5ff;
+}
+
+/* Hero image */
+.hero-image {
+  max-width: 220px;
+  float: right;
+  margin-left: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(20, 40, 80, 0.08);
+}
+
+/* Sidebar */
+aside.card {
+  padding: 1rem;
+  border-left: 4px solid var(--primary);
+  background: #f8f0ff;
+}
+
+.running-mate img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  padding: 1rem 2rem;
+  border-top: 1px solid #eee;
+  background: linear-gradient(180deg, #fff 0%, #f9f5ff 100%);
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+  .hero-image {
+    float: none;
+    display: block;
+    margin: 0 0 1rem 0;
+    width: 100%;
+  }
+}
 
