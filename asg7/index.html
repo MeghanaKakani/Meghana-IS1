@@ -3,133 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Leia Organa for President — Campaign Page</title>
+  <title>RM for President — Campaign Page</title>
 
-  <!-- Local fonts downloaded with Google Fonts Helper placed in: asg7/fonts/ -->
-  <style>
-    /* Playfair Display - used for headings (downloaded via Google Fonts Helper) */
-    @font-face {
-      font-family: 'PlayfairDisplayLocal';
-      src: url('fonts/PlayfairDisplay-Regular.ttf') format('truetype');
-      font-weight: 400;
-      font-style: normal;
-      font-display: swap;
-    }
-
-    /* Montserrat - used for body / UI (downloaded via Google Fonts Helper) */
-    @font-face {
-      font-family: 'MontserratLocal';
-      src: url('fonts/Montserrat-SemiBold.ttf') format('truetype');
-      font-weight: 600;
-      font-style: normal;
-      font-display: swap;
-    }
-
-    :root{
-      --accent:#2b6cb0; /* navy-ish */
-      --muted:#f6f8fb;
-      --max-width:1000px;
-    }
-
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: 'MontserratLocal', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-      background: linear-gradient(180deg, #ffffff 0%, var(--muted) 100%);
-      color:#111;
-      line-height:1.6;
-      padding:2rem;
-      display:flex;
-      justify-content:center;
-    }
-
-    .container{
-      max-width:var(--max-width);
-      width:100%;
-      background:#fff;
-      border-radius:12px;
-      box-shadow:0 10px 30px rgba(10,20,40,0.08);
-      overflow:hidden;
-    }
-
-    header{
-      padding:2rem;
-      border-bottom:1px solid #eee;
-      display:flex;
-      gap:1rem;
-      align-items:center;
-    }
-
-    header h1{
-      font-family:'PlayfairDisplayLocal', Georgia, 'Times New Roman', serif;
-      margin:0;
-      font-size:1.8rem;
-      color:var(--accent);
-    }
-
-    header p{margin:0; color:#555}
-
-    main{
-      display:grid;
-      grid-template-columns: 1fr 320px;
-      gap:1.5rem;
-      padding:1.5rem 2rem 2rem 2rem;
-      align-items:start;
-    }
-
-    section.card{
-      background:linear-gradient(180deg, #fff 0%, #fbfdff 100%);
-      padding:1.25rem;
-      border-radius:8px;
-      border:1px solid #f0f4f8;
-    }
-
-    .hero-image{
-      max-width:220px;
-      float:right;
-      margin-left:1rem;
-      border-radius:8px;
-      box-shadow:0 6px 18px rgba(20,40,80,0.08);
-    }
-
-    aside.card{
-      padding:1rem;
-      border-left:4px solid var(--accent);
-      background:#fbfdff;
-    }
-
-    .running-mate img{max-width:100%; border-radius:8px}
-
-    footer{
-      padding:1rem 2rem;
-      border-top:1px solid #eee;
-      background:linear-gradient(180deg, #fff 0%, #f9fbff 100%);
-      font-size:0.9rem;
-      color:#666;
-    }
-
-    a.button{
-      display:inline-block;
-      padding:0.45rem 0.9rem;
-      background:var(--accent);
-      color:#fff;
-      border-radius:6px;
-      text-decoration:none;
-      font-weight:600;
-    }
-
-    @media (max-width:900px){
-      main{grid-template-columns:1fr}
-      .hero-image{float:none; display:block; margin:0 0 1rem 0; width:100%}
-    }
-  </style>
+  <!-- Link external stylesheet -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
     <header>
       <div style="flex:1">
-        <h1>Leia Organa for President</h1>
-        <p>Leadership. Compassion. A future for all systems.</p>
+        <h1>RM for President</h1>
+        <p>Leadership. Art. Unity for a New Era.</p>
       </div>
       <div style="text-align:right">
         <a class="button" href="#platform">See the platform</a>
@@ -139,46 +23,44 @@
     <main>
       <!-- SECTION 1 -->
       <section class="card" aria-labelledby="bio-heading">
-        <h2 id="bio-heading" style="font-family:'PlayfairDisplayLocal', serif; margin-top:0">Short Bio</h2>
+        <h2 id="bio-heading">Short Bio</h2>
 
         <!-- Image of the individual -->
-        <!-- Replace images/leia.jpg with your downloaded image file -->
-        <img src="images/leia.jpg" alt="Leia Organa portrait" class="hero-image">
+        <img src="images/rm.jpg" alt="RM (Kim Namjoon) portrait" class="hero-image">
 
         <p>
-          Leia Organa of Alderaan is a seasoned stateswoman, diplomat, and leader who helped found the New Republic and has spent her life fighting for democracy and human dignity across the galaxy. A former senator and resistance leader, Leia combines strategic courage with empathy — a rare blend that has earned her respect from allies and opponents alike.
+          Kim Namjoon, known globally as RM, is the leader of BTS — a world-renowned South Korean music group. Beyond his musical achievements, RM is recognized for his intelligence, eloquence, and leadership both on and off stage. Fluent in English and deeply passionate about art, literature, and philosophy, RM represents a new generation of thoughtful, socially aware leaders who bridge creativity with compassion.
         </p>
 
-        <h3 style="font-family:'PlayfairDisplayLocal', serif;">Why she would make a good ruler</h3>
+        <h3>Why he would make a good ruler</h3>
         <p>
-          Leia's experience in building institutions from the ground up and her commitment to protecting civil liberties make her uniquely qualified to lead. She values coalition-building over coercion, understands the burdens of leadership, and consistently centers the needs of ordinary citizens in policy decisions. Her calm under pressure and refusal to compromise on justice would guide the nation toward a more stable, inclusive future.
+          RM has consistently shown a deep sense of empathy and wisdom. His speeches — from the United Nations to award ceremonies — highlight his belief in self-love, mutual respect, and the power of youth to change the world. His ability to bring people together through words and action demonstrates the calm, intelligent leadership that a future president should embody.
         </p>
 
         <p>
-          Learn more on her Wikipedia page: 
-          <a href="https://en.wikipedia.org/wiki/Leia_Organa" target="_blank" rel="noopener">Leia Organa — Wikipedia</a>.
+          Learn more on his Wikipedia page: 
+          <a href="https://en.wikipedia.org/wiki/RM_(rapper)" target="_blank" rel="noopener">RM — Wikipedia</a>.
         </p>
       </section>
 
       <!-- SECTION 2 - SIDEBAR -->
       <aside class="card" aria-labelledby="running-mate-heading">
-        <h2 id="running-mate-heading" style="font-family:'PlayfairDisplayLocal', serif; margin-top:0">Running Mate</h2>
+        <h2 id="running-mate-heading">Running Mate</h2>
 
-        <!-- Replace images/han.jpg with your downloaded image file -->
         <div class="running-mate">
-          <img src="images/han.jpg" alt="Han Solo portrait">
-          <h3 style="font-family:'PlayfairDisplayLocal', serif;">Han Solo</h3>
+          <img src="images/hongjoong.jpg" alt="Hongjoong from ATEEZ portrait">
+          <h3>Hongjoong (ATEEZ)</h3>
           <p>
-            A pragmatic and resourceful partner, Han Solo brings real-world negotiation skills, quick decision-making, and broad popular appeal. His background as a smuggler-turned-hero gives him a unique perspective on reforming trade, transport, and veterans' services. Together, Leia and Han balance principled leadership with practical problem-solving.
+            Hongjoong, the leader of ATEEZ, is known for his creativity, passion, and advocacy for self-expression. As RM’s running mate, he would bring a fresh, innovative approach to leadership — inspiring people to think boldly and embrace individuality. Together, RM and Hongjoong form a powerful duo of intellect, artistry, and purpose — uniting generations under a shared vision of empathy and progress.
           </p>
         </div>
       </aside>
 
       <!-- SECTION 3 -->
       <section class="card" id="platform" aria-labelledby="platform-heading">
-        <h2 id="platform-heading" style="font-family:'PlayfairDisplayLocal', serif; margin-top:0">Top Campaign Platform</h2>
+        <h2 id="platform-heading">Top Campaign Platform</h2>
         <p>
-          The campaign will focus on three core pillars: (1) Restoring and strengthening representative institutions so citizens across all systems have a voice; (2) Comprehensive security reform that prioritizes de-escalation, community safety, and transparent oversight of defense resources; and (3) A bold economic recovery program that invests in infrastructure, equitable education access, and interstellar trade policies that uplift working families. Leia's platform emphasizes diplomacy over domination, fairness over favoritism, and long-term resilience over short-term gain.
+          RM’s campaign focuses on three pillars: education, creativity, and unity. His goal is to create a society where art and learning go hand in hand — where education values creativity as much as academics. He aims to promote mental health awareness, sustainability, and cross-cultural collaboration, ensuring that every voice — regardless of age, gender, or background — is heard and valued. RM believes that leadership starts with understanding and that together, we can build a future that balances logic and love.
         </p>
       </section>
 
@@ -186,10 +68,9 @@
 
     <footer>
       <p>
-        <strong>How to submit:</strong> Save this file as <code>index.html</code> inside a folder named <code>asg7</code>. Create subfolders <code>fonts/</code> and <code>images/</code> inside <code>asg7</code>. Put the required font files (downloaded from Google Fonts Helper) into <code>asg7/fonts</code> and the portrait images into <code>asg7/images</code>. Add a link to <code>asg7/index.html</code> from your homepage, then upload or submit the homepage link to eLearning as instructed.
+        <strong>Submission Instructions:</strong> Save this file as <code>index.html</code> inside a folder named <code>asg7</code>. Create subfolders <code>fonts/</code> and <code>images/</code> inside <code>asg7</code>. Place the downloaded Google Fonts Helper font files in <code>asg7/fonts</code> and the portrait images of RM and Hongjoong in <code>asg7/images</code>. Add a link to this page from your homepage and submit the link to eLearning.
       </p>
     </footer>
   </div>
 </body>
 </html>
-
