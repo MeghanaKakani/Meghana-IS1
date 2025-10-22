@@ -1,1 +1,62 @@
+/* Color palette from coolors.co */
+:root {
+    --bg-color: #f4f7fc;       /* soft light background */
+    --primary-color: #2b2d42;  /* deep blue-gray */
+    --accent-color: #8d99ae;   /* muted gray-blue */
+    --highlight: #ef233c;      /* red accent */
+    --text-color: #1a1a1a;
+}
+
+/* General styling */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1.5rem 0;
+    border-radius: 15px;
+}
+
+/* Headings */
+h1, h2 {
+    font-family: 'Merriweather', serif;
+}
+
+/* Fluid type scale */
+h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+h2 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+p, li {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+/* Lists */
+ul {
+    list-style-type: square;
+    margin-left: 30px;
+}
+
+/* Sections */
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
 
