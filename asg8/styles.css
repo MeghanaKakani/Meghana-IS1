@@ -1,74 +1,102 @@
-
-:root {
-  --bg-color: #f5f0fa;        /* very light lavender */
-  --primary-color: #5e17eb;   /* bold purple */
-  --secondary-color: #b388eb; /* soft lilac */
-  --accent-color: #a56eff;    /* medium purple accent */
-  --text-color: #2b2b2b;
-  --white: #ffffff;
+@font-face {
+  font-family: 'CormorantLocal';
+  src: url('fonts/CormorantGaramond-Regular.ttf') format('truetype');
 }
 
-/* General styling */
+@font-face {
+  font-family: 'PoppinsLocal';
+  src: url('fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+/* Root colors */
+:root {
+  --primary: #9B5DE5; /* Light lavender purple */
+  --accent: #FFD700;  /* Gold */
+  --light-bg: #faf5ff;
+  --text-dark: #222;
+}
+
+/* General layout */
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  font-family: 'Poppins', sans-serif;
   margin: 0;
-  padding: 20px;
-  line-height: 1.6;
+  font-family: 'PoppinsLocal', sans-serif;
+  background: linear-gradient(180deg, #ffffff 0%, var(--light-bg) 100%);
+  color: var(--text-dark);
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  overflow: hidden;
 }
 
 /* Header */
 header {
+  background: lightpurple(--primary);
+  color: white;
   text-align: center;
-  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
-  color: var(--white);
-  padding: 1.5rem 0;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  padding: 1.5rem;
 }
 
-/* Headings */
-h1, h2 {
-  font-family: 'Merriweather', serif;
-  color: var(--primary-color);
-}
-
-/* Fluid type scale */
 h1 {
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-family: 'CormorantLocal', serif;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Content */
+main {
+  padding: 1.5rem;
+}
+
+.card {
+  background: var(--light-bg);
+  border-left: 4px solid var(--primary);
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  margin-bottom: 1.25rem;
 }
 
 h2 {
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  border-bottom: 2px solid var(--secondary-color);
-  padding-bottom: 5px;
+  font-family: 'CormorantLocal', serif;
+  color: var(--primary);
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
 }
 
 p, li {
-  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-family: 'PoppinsLocal', sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+  font-weight: 400;
 }
 
-/* Lists */
 ul {
-  list-style-type: square;
-  margin-left: 30px;
-  color: var(--accent-color);
+  margin-left: 1.5rem;
+  color: var(--primary);
 }
 
-/* Main content box */
-main {
-  max-width: 800px;
-  margin: 30px auto;
-  background: var(--white);
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 4px 20px rgba(94, 23, 235, 0.2);
-}
-
-/* Strong text highlight */
 strong {
-  color: var(--primary-color);
+  color: var(--accent);
 }
 
+/* Responsive */
+@media (max-width: 700px) {
+  body {
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+}
 
