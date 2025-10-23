@@ -45,6 +45,58 @@ header {
 }
 
 h1 {
-  font-family: 'CormorantLocal', se
+  font-family: 'CormorantLocal', serif;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
 
+/* Content */
+main {
+  padding: 1.5rem;
+}
+
+.card {
+  background: var(--light-bg);
+  border-left: 4px solid var(--primary);
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  margin-bottom: 1.25rem;
+}
+
+h2 {
+  font-family: 'CormorantLocal', serif;
+  color: var(--primary);
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+p, li {
+  font-family: 'PoppinsLocal', sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+  font-weight: 400;
+}
+
+ul {
+  margin-left: 1.5rem;
+  color: var(--primary);
+}
+
+strong {
+  color: var(--accent);
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  body {
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+}
 
