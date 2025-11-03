@@ -74,7 +74,7 @@ header nav a:hover {
 .hero {
     position: relative;
     height: 500px;
-    background-image: url('images/seoul-skyline.jpg'); /* 🏙️ City background */
+    background-image: url('images/seoul-skyline'); /* 🏙️ City background */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
