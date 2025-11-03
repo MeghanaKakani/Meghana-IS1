@@ -1,20 +1,23 @@
-/* ----------------------------- */
-/* GOOGLE FONTS                 */
-/* ----------------------------- */
+/* --------------------------------------------- */
+/* GOOGLE FONTS                                 */
+/* --------------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Roboto:wght@400;500&display=swap');
 
-/* ----------------------------- */
-/* GLOBAL STYLES                */
-/* ----------------------------- */
+/* --------------------------------------------- */
+/* COLOR VARIABLES                              */
+/* --------------------------------------------- */
 :root {
     --primary-blue: #2A3EB1;
     --accent-red: #FF6B6B;
     --light-bg: #FFF9F3;
-    --secondary-bg: #E3E7F1;
+    --secondary-bg: rgba(255, 255, 255, 0.85);
     --text-dark: #333333;
     --text-light: #ffffff;
 }
 
+/* --------------------------------------------- */
+/* BASE STYLES                                  */
+/* --------------------------------------------- */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -23,22 +26,27 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: var(--light-bg);
     color: var(--text-dark);
     line-height: 1.7;
+    background-image: url('images/cherry-blossom-bg.jpg'); /* 🌸 Soft cherry blossom pattern */
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-/* ----------------------------- */
-/* HEADER + NAVIGATION          */
-/* ----------------------------- */
+/* --------------------------------------------- */
+/* HEADER + NAVIGATION                          */
+/* --------------------------------------------- */
 header {
-    background: linear-gradient(90deg, var(--primary-blue), #3f51dc);
+    background: linear-gradient(90deg, rgba(42,62,177,0.9), rgba(63,81,220,0.9));
     color: var(--text-light);
     padding: 20px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
 }
 
 header nav {
@@ -60,34 +68,52 @@ header nav a:hover {
     color: var(--accent-red);
 }
 
-/* ----------------------------- */
-/* HERO SECTION                 */
-/* ----------------------------- */
+/* --------------------------------------------- */
+/* HERO SECTION                                 */
+/* --------------------------------------------- */
 .hero {
+    position: relative;
     height: 500px;
+    background-image: url('images/seoul-skyline.jpg'); /* 🏙️ City background */
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     color: var(--text-light);
-    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
     font-family: 'Playfair Display', serif;
     font-size: 2.8em;
     padding: 20px;
 }
 
-/* ----------------------------- */
-/* CONTAINER & HEADINGS         */
-/* ----------------------------- */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+/* Ensure hero text stays above overlay */
+.hero h1, .hero h2 {
+    position: relative;
+    z-index: 2;
+}
+
+/* --------------------------------------------- */
+/* CONTAINER & SECTION STYLES                   */
+/* --------------------------------------------- */
 .container {
     width: 90%;
     max-width: 1100px;
     margin: 40px auto;
-    padding: 30px;
+    padding: 40px;
     background-color: var(--secondary-bg);
     border-radius: 15px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
 }
 
 h1, h2, h3 {
@@ -109,9 +135,9 @@ p, li {
     margin-bottom: 15px;
 }
 
-/* ----------------------------- */
-/* BUTTONS (CTA)                */
-/* ----------------------------- */
+/* --------------------------------------------- */
+/* BUTTONS (CTAs)                               */
+/* --------------------------------------------- */
 button {
     background-color: var(--accent-red);
     border: none;
@@ -123,6 +149,7 @@ button {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(255,107,107,0.4);
 }
 
 button:hover {
@@ -130,9 +157,9 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* ----------------------------- */
-/* IMAGES                       */
-/* ----------------------------- */
+/* --------------------------------------------- */
+/* IMAGES                                       */
+/* --------------------------------------------- */
 img {
     max-width: 100%;
     border-radius: 12px;
@@ -141,15 +168,15 @@ img {
 }
 
 img:hover {
-    transform: scale(1.02);
+    transform: scale(1.03);
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-/* ----------------------------- */
-/* ACTIVITY & RESTAURANT CARDS  */
-/* ----------------------------- */
+/* --------------------------------------------- */
+/* ACTIVITY & RESTAURANT CARDS                  */
+/* --------------------------------------------- */
 .activity, .restaurant {
-    background-color: var(--light-bg);
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 12px;
     padding: 20px;
     margin-bottom: 25px;
@@ -161,9 +188,9 @@ img:hover {
     transform: translateY(-5px);
 }
 
-/* ----------------------------- */
-/* FORM (CONTACT PAGE)          */
-/* ----------------------------- */
+/* --------------------------------------------- */
+/* FORM (CONTACT PAGE)                          */
+/* --------------------------------------------- */
 form {
     display: flex;
     flex-direction: column;
@@ -175,6 +202,7 @@ input, textarea {
     border: 1px solid #ccc;
     font-size: 15px;
     margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.95);
 }
 
 input:focus, textarea:focus {
@@ -183,22 +211,22 @@ input:focus, textarea:focus {
     box-shadow: 0 0 5px rgba(255,107,107,0.4);
 }
 
-/* ----------------------------- */
-/* FOOTER                       */
-/* ----------------------------- */
+/* --------------------------------------------- */
+/* FOOTER                                       */
+/* --------------------------------------------- */
 footer {
-    background-color: var(--primary-blue);
+    background: linear-gradient(90deg, var(--primary-blue), #1b2a85);
     color: var(--text-light);
     text-align: center;
     padding: 20px 0;
     font-size: 0.95em;
     margin-top: 40px;
-    box-shadow: 0 -3px 6px rgba(0,0,0,0.2);
+    box-shadow: 0 -3px 6px rgba(0,0,0,0.3);
 }
 
-/* ----------------------------- */
-/* RESPONSIVE DESIGN            */
-/* ----------------------------- */
+/* --------------------------------------------- */
+/* RESPONSIVE DESIGN                            */
+/* --------------------------------------------- */
 @media (max-width: 768px) {
     header nav {
         flex-direction: column;
@@ -208,8 +236,13 @@ footer {
     .hero {
         font-size: 1.8em;
         padding: 40px 10px;
-        text-align: center;
     }
+
+    .container {
+        padding: 20px;
+    }
+}
+
 
     .container {
         padding: 20px;
