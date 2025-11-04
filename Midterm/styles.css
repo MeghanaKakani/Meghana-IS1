@@ -8,7 +8,7 @@ body {
 }
 
 /* Hero backgrounds for each page */
-.homepage {
+.index {
   background: url('Midterm/images/seoul-skyline.jpg') no-repeat center center/cover;
 }
 .activities {
