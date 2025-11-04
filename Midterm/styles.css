@@ -9,7 +9,7 @@ body {
 
 /* Hero backgrounds for each page */
 .homepage {
-  background: url('images/seoul-skyline') no-repeat center center/cover;
+  background: url('Midterm/images/seoul-skyline.jpg') no-repeat center center/cover;
 }
 .activities {
   background: url('images/jeju-island.jpg') no-repeat center center/cover;
