@@ -6,7 +6,17 @@ body {
   color: #333;
   line-height: 1.6;
 }
-
+h1 {
+  background-image: url('images/header-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 120px 0;  /* 👈 increase this number to make it taller */
+  font-size: 50px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 /* Hero backgrounds for each page */
 .index {
   background: url('Midterm/images/seoul-skyline.jpg') no-repeat center center/cover;
