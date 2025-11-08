@@ -17,9 +17,17 @@ h1 {
   font-family: Arial, sans-serif;
 }
 body {
-  background: linear-gradient(135deg, #fce1e4, #ffe5ec, #f8d8d8);
-}
-/* Hero backgrounds for each page */
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  
+  background-color: #1a1a1a;
+  background-image: url('images/morocca-flower-dark.png');
+  background-repeat: repeat;       
+  background-attachment: fixed;    
+  background-size: auto; 
+
 .index {
   background: url('Midterm/images/seoul-skyline.jpg') no-repeat center center/cover;
 }
