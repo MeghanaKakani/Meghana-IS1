@@ -16,6 +16,9 @@ h1 {
   margin: 0;
   font-family: Arial, sans-serif;
 }
+body {
+  background: linear-gradient(135deg, #fce1e4, #ffe5ec, #f8d8d8);
+}
 /* Hero backgrounds for each page */
 .index {
   background: url('Midterm/images/seoul-skyline.jpg') no-repeat center center/cover;
