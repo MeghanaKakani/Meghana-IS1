@@ -1,1 +1,95 @@
 
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #E0E0E0;
+  background: url('https://www.transparenttextures.com/patterns/dark-mosaic.png'), 
+              radial-gradient(circle at top, #0A0A0A 50%, #1A0000 100%);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* ---- Fluid Type Scale ---- */
+/* Generated from Fluid Type Scale Generator */
+html {
+  font-size: clamp(16px, 1.5vw, 20px);
+}
+
+/* ---- Headers ---- */
+h1 {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(2.5rem, 4vw, 4.5rem);
+  color: #D4AF37;
+  text-align: center;
+  margin-top: 2rem;
+  letter-spacing: 2px;
+  text-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+}
+
+h2 {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+  color: #8B0000;
+  text-shadow: 0 0 8px rgba(255, 0, 0, 0.3);
+}
+
+/* ---- Paragraphs ---- */
+p {
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
+  line-height: 1.6;
+  color: #E0E0E0;
+}
+
+/* ---- Layout ---- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #ccc;
+}
+
+/* ---- Flexbox Gallery ---- */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.member {
+  background: rgba(20, 20, 20, 0.85);
+  border-radius: 20px;
+  padding: 1rem;
+  text-align: center;
+  flex: 1 1 250px;
+  max-width: 250px;
+  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #8B0000;
+}
+
+.member:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 0, 0, 0.6);
+}
+
+.member img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #8B0000;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 600px) {
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
