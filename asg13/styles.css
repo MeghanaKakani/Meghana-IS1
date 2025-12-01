@@ -1,0 +1,100 @@
+/* Google Font Setup */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  color: #333;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(to bottom right, #7aa7ff, #d6e1ff);
+  color: #222;
+}
+
+header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.summary {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Gallery Layout */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 40px;
+}
+
+/* Job Cards */
+.job {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+.job:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Job Images */
+.job img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+/* Job Title */
+.job h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  margin: 10px 0;
+  color: #222;
+}
+
+/* Job Link Button */
+.job-link {
+  display: inline-block;
+  margin: 10px 0 15px;
+  padding: 8px 14px;
+  background-color: #4f7cff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.job-link:hover {
+  background-color: #335edc;
+}
+
+.job p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #efefef;
+  font-size: 0.9rem;
+  margin-top: 30px;
+}
